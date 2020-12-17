@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo | Taninha</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body
+    style="background-image: url('./imagens/bg-home.png'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh; overflow: hidden;">
+    <div class="dificuldade">
+        <div class="dificuldade-select">
+            <select name="nivel" id="jogo-nivel">
+                <option value="">Selecione o nível</option>
+                <option value="facil">Fácil</option>
+                <option value="medio">Médio</option>
+                <option value="dificil">Difícil</option>
+            </select>
+        </div>
+
+        <div class="dificuldade-botao">
+            <button type="button" onclick="iniciarJogo()">Jogar</button>
+        </div>
+    </div>
+
+    <script>
+        function iniciarJogo() {
+            var nivel = document.getElementById('jogo-nivel').value;
+    
+            if (nivel === '') {
+                alert('Por favor, selecione o nível');
+                return false;
+            }
+    
+            window.location.href = 'game.html?' + nivel;
+        }
+    </script>
+</body>
+
+</html>

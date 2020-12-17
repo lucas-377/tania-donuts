@@ -1,0 +1,94 @@
+html {
+    cursor: url('../imagens/taninha.png'), auto;
+}
+
+body {
+    background-image: url('../imagens/bg.png');
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Menu */
+.dificuldade {
+    width: 90%;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.dificuldade select {
+    height: 40px;
+    background-color: #d1507a;
+    color: #fff;
+    width: 200px;
+    padding: 5px;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 3px 5px 20px #d66289;
+}
+
+.dificuldade-botao button {
+    background-color: #ea8324;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 15px;
+    box-shadow: 3px 5px 20px #ffc289;
+}
+
+
+/* Painel do jogo */
+.jogo-painel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid #ffffff;
+    background-color: #ffffff;
+    opacity: 0.7;
+}
+
+.jogo-vidas {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.jogo-vidas p {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.jogo-vidas img {
+    margin-right: 5px;
+}
+
+.jogo-cronometro {
+    font-weight: bold;
+}
+
+/* Donuts */
+.donuts-grande {
+    height: 120px;
+}
+
+.donuts-medio {
+    height: 90px;
+}
+
+.donuts-pequeno {
+    height: 60px;
+}
